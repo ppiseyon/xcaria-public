@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .text-edge-outline {
+    -webkit-text-stroke: 1px rgba(255,255,255,0.3);
+  }
+} 
+
+
+/* navbar-menu */
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.max-w-2xl {
+  max-width: 100vw;
+  
+}
