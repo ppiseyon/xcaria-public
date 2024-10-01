@@ -1,6 +1,6 @@
 "use server";
 
-import { createClient } from "@/src/utils/supabase/server";
+import { createClient } from "@/src/app/supabase/server";
 import { redirect } from "next/navigation";
 
 export async function signIn(formData: FormData){
@@ -21,7 +21,7 @@ export async function signIn(formData: FormData){
       return redirect("/login?message=Could not authenticate user");
     }
     
-    return redirect("/home");
+    return redirect("/xcariabase");
   };
 
   export async function logOut() {

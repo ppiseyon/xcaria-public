@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
-import { getBlogs } from '@/src/components/BlogCompo/ArticleComponent/article'
+import {getBlogs } from '@/src/app/(routes)/blog/page'
 
 
 interface PageProps {

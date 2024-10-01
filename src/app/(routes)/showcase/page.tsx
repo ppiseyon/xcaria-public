@@ -8,7 +8,7 @@ import Link from "next/link";
 import AnimatedTextWord from '@/src/components/ShowcaseCompo/animatedText'
 import styles from "./page.module.css";
 import { datas } from "@/src/components/ShowcaseCompo/datas";
-import { createClient } from "@/src/utils/supabase/server";
+import { createClient } from "@/src/app/supabase/server";
 
 // import { redirect } from "next/navigation";
 

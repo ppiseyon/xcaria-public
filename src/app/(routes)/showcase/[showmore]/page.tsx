@@ -1,6 +1,6 @@
 // import { datas } from "../datas";
 import ViewMorePage from "./showmore";
-import { createClient } from "@/src/utils/supabase/server";
+import { createClient } from "@/src/app/supabase/server";
 import { redirect } from "next/navigation";
 
 interface PageProps {
@@ -10,7 +10,7 @@ interface PageProps {
 export default async function Page({ params }: PageProps) {
   const id = params.showmore;
 
-  const clientApp = ['0' , '1' , '2'];
+  // const clientApp = ['0' , '1' , '2'];
 
   const rawData = await fetch('https://xcaria-public.onrender.com/news');
   
@@ -20,29 +20,29 @@ export default async function Page({ params }: PageProps) {
 
   const data = await rawData.json();
   
-  const supabase = createClient()
-    const { data: activeSession } = await supabase.auth.getSession();
+  // const supabase = createClient()
+  //   const { data: activeSession } = await supabase.auth.getSession();
 
-	if (!activeSession.session) {
-		return redirect("/auth");
-	}
+	// if (!activeSession.session) {
+	// 	return redirect("/auth");
+	// }
 
-	const { data: user } = await supabase.from("user").select("*").single();
+	// const { data: user } = await supabase.from("user").select("*").single();
 
-  if (user?.role === "user") {
-    return (
-      <h1 className="h-screen flex justify-center items-center">
-        Sorry You Don't have access to this page 
-      </h1>
-    );
-  }
-  else if(user?.role === "client" && !clientApp.includes(id)){ 
-    return (
-      <h1 className="h-screen flex justify-center items-center">
-        Sorry You Don't have access to this page   
-      </h1>  
-    );   
-  }  
+  // if (user?.role === "user") {
+  //   return (
+  //     <h1 className="h-screen flex justify-center items-center">
+  //       Sorry You Don't have access to this page 
+  //     </h1>
+  //   );
+  // }
+  // else if(user?.role === "client" && !clientApp.includes(id)){ 
+  //   return (
+  //     <h1 className="h-screen flex justify-center items-center">
+  //       Sorry You Don't have access to this page   
+  //     </h1>  
+  //   );   
+  // }  
 
   return (
     <ViewMorePage id={id} news={data} />
