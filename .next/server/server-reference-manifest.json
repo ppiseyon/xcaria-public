@@ -1,5 +1,30 @@
 {
-  "node": {},
+  "node": {
+    "1a1e924d7db01a95b88ae2c0947135c5a889dd58": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/.pnpm/next@14.2.4_@opentelemetry+api@1.4.1_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cadmin%5C%5CDesktop%5C%5Cxcaria-public%5C%5Csrc%5C%5Cutils%5C%5Cactions%5C%5Cauth-actions.ts%22%2C%5B%22signIn%22%2C%22logOut%22%5D%5D%5D&__client_imported__=true!",
+        "app/(routes)/login/page": "(rsc)/./node_modules/.pnpm/next@14.2.4_@opentelemetry+api@1.4.1_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cadmin%5C%5CDesktop%5C%5Cxcaria-public%5C%5Csrc%5C%5Cutils%5C%5Cactions%5C%5Cauth-actions.ts%22%2C%5B%22signIn%22%2C%22logOut%22%5D%5D%5D&__client_imported__=!",
+        "app/_not-found/page": "(action-browser)/./node_modules/.pnpm/next@14.2.4_@opentelemetry+api@1.4.1_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cadmin%5C%5CDesktop%5C%5Cxcaria-public%5C%5Csrc%5C%5Cutils%5C%5Cactions%5C%5Cauth-actions.ts%22%2C%5B%22signIn%22%2C%22logOut%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/page": "action-browser",
+        "app/(routes)/login/page": "rsc",
+        "app/_not-found/page": "action-browser"
+      }
+    },
+    "4700a3c985e06800320949bdd31c04c6046abd01": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/.pnpm/next@14.2.4_@opentelemetry+api@1.4.1_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cadmin%5C%5CDesktop%5C%5Cxcaria-public%5C%5Csrc%5C%5Cutils%5C%5Cactions%5C%5Cauth-actions.ts%22%2C%5B%22signIn%22%2C%22logOut%22%5D%5D%5D&__client_imported__=true!",
+        "app/(routes)/login/page": "(rsc)/./node_modules/.pnpm/next@14.2.4_@opentelemetry+api@1.4.1_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cadmin%5C%5CDesktop%5C%5Cxcaria-public%5C%5Csrc%5C%5Cutils%5C%5Cactions%5C%5Cauth-actions.ts%22%2C%5B%22signIn%22%2C%22logOut%22%5D%5D%5D&__client_imported__=!",
+        "app/_not-found/page": "(action-browser)/./node_modules/.pnpm/next@14.2.4_@opentelemetry+api@1.4.1_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cadmin%5C%5CDesktop%5C%5Cxcaria-public%5C%5Csrc%5C%5Cutils%5C%5Cactions%5C%5Cauth-actions.ts%22%2C%5B%22signIn%22%2C%22logOut%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/page": "action-browser",
+        "app/(routes)/login/page": "rsc",
+        "app/_not-found/page": "action-browser"
+      }
+    }
+  },
   "edge": {},
-  "encryptionKey": "FftXH3HDzYkctpVdshWJ1oQ6jJFFyO/yQp0zuq2QgXo="
+  "encryptionKey": "nyMVUGFDqjKThPLGI0WcinjeAA3T8XzeybQaOJ2JQNU="
 }

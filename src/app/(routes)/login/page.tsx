@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { headers } from "next/headers";
-import { createClient } from "@/src/utils/supabase/server";
+import { createClient } from "@/src/app/supabase/server";
 // import {sig}
 import {signIn} from '../../../utils/actions/auth-actions'
 import { SubmitButton } from "./submit-button";
