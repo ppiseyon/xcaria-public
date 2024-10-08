@@ -1,0 +1,53 @@
+.cardContainer{
+    position: relative;
+    width: 100%;
+}
+.light{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(30%,20%);
+    background-color: rgba(163, 255, 255, 0.204);
+    filter: blur(40px);
+    border-radius: 50%;
+
+    
+}
+.contactForm{
+   
+
+    border:solid 1.5px white;
+    background: rgba(255, 255, 255, 0.158);
+    width: 35vw;
+    padding: 40px 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(40px);
+    
+}   
+.card input{
+    border: solid 1px white ;
+
+
+}
+.card input:hover{
+    border: solid 1px rgb(13, 223, 255) ;
+
+
+}
+.card textarea{
+    border: solid 1px white ;
+
+
+}
+.card textarea:hover{
+    border: solid 1px rgb(0, 221, 255) ;
+
+
+
+}
+.btn{
+    text-align: center;
+    margin-top: 20px;
+}

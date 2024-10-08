@@ -1,0 +1,75 @@
+.cardContainer{
+  margin-top: 0px;
+}
+.cards {
+  padding: 15px 20px;
+ background:linear-gradient(to left,rgba(140, 197, 255, 0.63),rgba(255, 255, 255, 0.142));
+ border: solid 1px rgba(255, 255, 255, 0.662);
+ backdrop-filter: blur(40px);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.imgSection{
+  height: 150px;
+  width: 550px;
+  /* box-shadow: 5px 10px green inset; */
+  border-radius: 12px;
+  background-size: contain;
+  background-position: center;
+  border-radius: 12px;
+
+  
+
+}
+.img{
+  height: 100%;
+  width: 100%;
+    border-radius: 12px;
+    /* box-shadow:  1px 1px 7px black ; */
+    object-fit: cover;
+    background-position: center;
+   
+
+
+}
+.title{
+  color: transparent;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  background:linear-gradient(to left,rgb(155, 155, 155),rgb(255, 255, 255));
+  -webkit-background-clip: text;
+  
+}
+.paragraph{
+  color: rgba(202, 202, 202, 0.714);
+}
+
+.desp{
+  /* margin-top: 10px; */
+  color: rgba(202, 202, 202, 0.714);
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.137);
+  border-bottom: solid 1px rgba(255, 255, 255, 0.662);
+  border-left: solid 1px rgba(255, 255, 255, 0.662);
+  border-right: solid 1px rgba(255, 255, 255, 0.662);
+
+
+  backdrop-filter: blur(40px);
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+
+  
+
+}

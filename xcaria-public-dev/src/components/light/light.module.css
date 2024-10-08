@@ -1,0 +1,35 @@
+
+.light1{
+    height: 400px;
+    width: 450px;
+    background-color: rgba(149, 193, 255, 0.564);
+    filter: blur(100px);
+    position: absolute;
+    left: 30%;
+    top: -40%;
+    z-index: 36;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+    
+}
+.light2{
+    height: 400px;
+    width: 350px;
+    background-color: rgba(149, 193, 255, 0.564);
+    filter: blur(100px);
+    position: absolute;
+    left: -20%;
+    top: 30%;
+    /* z-index: 36; */
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+
+    /* display: none; */
+
+    
+}
+@keyframes pulse {
+    50% {
+      opacity: 0.5;
+    }
+  }

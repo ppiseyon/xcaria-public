@@ -1,0 +1,31 @@
+.logosHeader{
+    height: 80px;
+    width: 100vw;
+    padding: 0 7%;
+}
+
+
+
+.logoContainer{
+   height: 100%;
+   width: 100%;
+   margin-top: 40px; 
+   border-radius: 12px;
+   padding: 0 5%;
+   background: linear-gradient(to left,rgba(255, 255, 255, 0.09),rgba(226, 108, 255, 0.085));
+  
+   
+
+}
+.logos{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.LogoTicker{
+    height: 40px;
+    width: 140px;
+}
