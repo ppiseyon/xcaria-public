@@ -3,7 +3,7 @@
 }
 .cards {
   padding: 15px 20px;
- background:linear-gradient(to left,rgba(140, 197, 255, 0.63),rgba(255, 255, 255, 0.142));
+ background:linear-gradient(to left,rgba(151, 203, 255, 0.422),rgba(255, 255, 255, 0.142));
  border: solid 1px rgba(255, 255, 255, 0.662);
  backdrop-filter: blur(40px);
   border-top-left-radius: 8px;

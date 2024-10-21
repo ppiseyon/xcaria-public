@@ -1,0 +1,15 @@
+
+.head{
+    font-size: 2.5rem;
+    background: linear-gradient(to left,rgba(116, 116, 116, 0.615),white);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+  }
+  .para{
+    color: rgb(156, 156, 156);
+    width: 600px;
+    text-align: center;
+  }

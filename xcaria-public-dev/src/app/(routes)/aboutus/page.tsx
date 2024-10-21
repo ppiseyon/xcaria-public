@@ -9,6 +9,7 @@ import kayel from '@/public/kayel.png'
 import AboutPageHeading from "@/src/components/AboutPageHeading";
 import { motion } from "framer-motion";
 import Teamcard from "@/src/components/TeamCard/Teamcard";
+import styles from './about.module.css'
 
 function Aboutpage() {
 
@@ -73,7 +74,13 @@ function Aboutpage() {
           viewport={{ once: true }}
           variants={fadeInUpAnimation}
       >
-        <AboutPageHeading text="About Us" />
+        {/* <AboutPageHeading text="About Us" /> */}
+        <div className="flex flex-col items-center justify-center">
+        <h2 className={styles.head}>About Us</h2>
+        <p className={styles.para}>
+        We are dedicated to delivering innovative solutions that empower businesses to thrive in a digital world.
+        </p>
+      </div>
 
         <div className=" text-[0.8rem] px-24 text-justify space-y-4 mt-11 ">
           {/* <p>
@@ -157,7 +164,9 @@ function Aboutpage() {
        whileInView="show"
        viewport={{ once: true }}
        variants={fadeInUpAnimation}>
+        <div className="mt-20">
         <AboutPageHeading text="Meet our team" />
+        </div>
         <div className=" flex justify-center gap-16 items-center flex-wrap h-full mt-24 px-32">
         {
           TeamData.map((data)=>(
@@ -173,7 +182,9 @@ function Aboutpage() {
        whileInView="show"
        viewport={{ once: true }}
        variants={fadeInUpAnimation}>
+        <div className='mt-24'>
         <AboutPageHeading text="Our Vision" />
+        </div>
         <div className="mx-2  px-24   mt-11 text-justify space-y-4">
           <h2 className="text-2xl">Vision, Leadership, Consistency</h2>
           <h3 className="text-xl">

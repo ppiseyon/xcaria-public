@@ -6,6 +6,7 @@ import { Card } from "./(routes)/contact/card";
 import Landing from "../components/landing/landing";
 // import { Article } from "./(routes)/projects/article";
 import Landingpage from "../components/Landingpage/landingpage";
+import AirobotLandingPage from "../components/AirobotLandingPage/AirobotLandingPage";
 const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
@@ -37,7 +38,7 @@ export default function Home() {
     <>
     <Landing/>
     {/* <Landingpage/> */}
-    
+    {/* <AirobotLandingPage/> */}
     </>
   );
 }

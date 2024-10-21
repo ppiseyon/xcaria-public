@@ -1,0 +1,77 @@
+.heading{
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    position: relative;
+    top: -40px;
+    margin-left: 10%
+}
+.heading h3{
+    font-size: 1.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    margin-top: 50px;
+    
+}
+.heading h1{
+    font-size: 2.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: transparent;
+    letter-spacing: 1.2px;
+    text-wrap: wrap;
+    background:linear-gradient(to left,rgb(25, 255, 247),rgb(53, 53, 255));
+    -webkit-background-clip: text;
+
+}
+.heading p{
+    margin-top: 10px;
+}
+.btn{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.solidBtn{
+    background: linear-gradient(rgb(64, 210, 255),rgb(100, 65, 255));
+    height: 45px;
+    width: 170px;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: 0;
+    border: none;
+    transition:all  ease 0.5s;
+}
+.solidBtn:hover{
+    outline: 0;
+    background: transparent;
+    border: solid 2px rgb(106, 103, 255);
+}
+.strokeBtn{
+    border: solid 2px rgb(41, 14, 218);
+    height: 45px;
+    width: 200px;
+    border-radius: 30px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all ease .8s;
+}
+.strokeBtn:hover{
+    
+    border:solid 2px rgb(89, 202, 255);
+
+
+    
+}

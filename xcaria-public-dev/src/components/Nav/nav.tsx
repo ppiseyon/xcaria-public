@@ -59,20 +59,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import {motion} from 'framer-motion'
 import Link from 'next/link';
+import style from './nav.module.css'
 import { ArrowLeft } from 'lucide-react'; // Ensure you import the correct icons
 // import { logOut } from '../app/logout/action';
-import { usePathname } from 'next/navigation'
-import {logOut} from '../utils/actions/auth-actions'
-// import { createClient } from "@/src/utils/supabase/server";
+// import {logOut} from '../utils/actions/auth-actions'
+import Xcaria from '@/public/xcariaLogo.png'
+import Image from 'next/image';
 
- function Nav() {
-
-	// const supabase = createClient();
-
-	// const { data, error } = await supabase.auth.getUser();
-
-	const currentPath = usePathname();
-
+function Nav() {
   const ref = useRef(null);
   const [isIntersecting, setIsIntersecting] = useState(false);
 
@@ -120,45 +114,42 @@ import {logOut} from '../utils/actions/auth-actions'
 
 		 >
 		  {/* Logo on the left */}
-		  <Link href="/" className="flex items-center">
-			<h1 className="text-xl font-bold text-white">xCaria</h1>
-		  </Link>
+      <Link href="/" className="flex items-center">
+            <div className="text-xl font-bold text-white ">
+              <Image
+                src={Xcaria}
+                alt="xcaria logo..."
+                height={100}
+                width={110}
+              />
+            </div>
+          </Link>
   
 		  {/* Navigation Links in the middle */}
-		  <div className="flex-1 text-center gap-4">
-			<Link href="/showcase" className={` ${isIntersecting?'px-4 py-2 text-zinc-400 hover:text-zinc-100 duration-200':'text-white px-4 hover:text-zinc-400'}`}>
+		  <div className={style.navItem}>
+			<Link href="/showcase" className={` ${isIntersecting?`${style.beforeIntersect}`:`${style.afterIntersect}`}`}>
 			  Product
 			</Link>
-			<Link href="/blog" className={` ${isIntersecting?'px-4 py-2 text-zinc-400 hover:text-zinc-100 duration-200':'text-white px-4 hover:text-zinc-400'}`}>
+			<Link href="/blog" className={` ${isIntersecting?`${style.beforeIntersect}`:`${style.afterIntersect}`}`}>
 			  Blog
 			</Link>
 		  </div>
   
 		  {/* Action buttons on the right */}
 		  <div className="flex items-center gap-4">
-		  <Link href="/aboutus" className={` ${isIntersecting?'px-4 py-2 text-zinc-400 hover:text-zinc-100 duration-200':'text-white px-4 hover:text-zinc-400'}`}>
+		  <Link href="/aboutus" className={` ${isIntersecting?`${style.beforeIntersect}`:`${style.afterIntersect}`}`}>
 			  About Us
 			</Link>
-			{
-				currentPath !== '/xcariabase'?
-				<Link href="/login"className={` ${isIntersecting?'px-4 py-2 text-zinc-400 hover:text-zinc-100 duration-200':'text-white px-4 hover:text-zinc-400'}`}>
+			<Link href="/login" className={` ${isIntersecting?`${style.beforeIntersect}`:`${style.afterIntersect}`}`}>
 			  Sign In
-			</Link> : 
-			 <form action={logOut}>
-			 <button type="submit" className="px-4 py-2 text-zinc-400 hover:text-zinc-100 duration-200">
-			   Log Out
-			 </button></form>
-			}
-			
-			
+			</Link>
 			{/* <form action={logOut}>
 			<button type="submit" className="px-4 py-2 text-zinc-400 hover:text-zinc-100 duration-200">
-			  Log Out
+			  Contact Us
 			</button></form> */}
 			<Link href="/contact" className="px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700 duration-200">
 			  Contact Us
 			</Link>
-			{/* <div className='text-white'>current pathname:{currentPath}</div> */}
 		  </div>
 		</motion.div>
 	  </div>

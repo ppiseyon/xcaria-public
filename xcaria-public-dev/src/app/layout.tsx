@@ -4,7 +4,7 @@ import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "../components/analytics";
-import Nav from '../components/nav';
+import Nav from '../components/Nav/nav';
 import Footer from "@/src/components/Footer/foot";
 import Light from '@/src/components/light/light'
 // function generateMetadata() {

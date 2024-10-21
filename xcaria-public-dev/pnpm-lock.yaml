@@ -32,6 +32,12 @@ importers:
       '@next/font':
         specifier: latest
         version: 14.2.4(next@14.2.4(@opentelemetry/api@1.4.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@splinetool/react-spline':
+        specifier: ^4.0.0
+        version: 4.0.0(@splinetool/runtime@1.9.31)(next@14.2.4(@opentelemetry/api@1.4.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@splinetool/runtime':
+        specifier: ^1.9.31
+        version: 1.9.31
       '@supabase/ssr':
         specifier: ^0.3.0
         version: 0.3.0(@supabase/supabase-js@2.43.5)
@@ -358,6 +364,20 @@ packages:
     resolution: {integrity: sha512-yHSKYidqJMV9nADqg78GYA+cZ0hS1twANAjiFibQdXj9aGzD+s/IzIFEIi/U/OBLvWYg/SCw0QVozi2vTlKFDQ==}
     cpu: [x64]
     os: [win32]
+
+  '@splinetool/react-spline@4.0.0':
+    resolution: {integrity: sha512-FqrV7/K2q998Y0t83QUauQxsifKWAg9CFZoSb64qRuH7IfHkDs5/OgU1ACkg0aTgsEPtFlH+kATQ+8X6MrizHQ==}
+    peerDependencies:
+      '@splinetool/runtime': '*'
+      next: '>=14.2.0'
+      react: '*'
+      react-dom: '*'
+    peerDependenciesMeta:
+      next:
+        optional: true
+
+  '@splinetool/runtime@1.9.31':
+    resolution: {integrity: sha512-shW5Vz8qv/IbTd9k/9l55ddVtv9cEYpOWzP8luaN0z27hVKczBu5uUMkjJ7c+j7CRVEbGOMuYL/5ewdFgHtjrQ==}
 
   '@supabase/auth-js@2.64.2':
     resolution: {integrity: sha512-s+lkHEdGiczDrzXJ1YWt2y3bxRi+qIUnXcgkpLSrId7yjBeaXBFygNjTaoZLG02KNcYwbuZ9qkEIqmj2hF7svw==}
@@ -716,6 +736,9 @@ packages:
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
+
+  blurhash@2.0.5:
+    resolution: {integrity: sha512-cRygWd7kGBQO3VEhPiTgq4Wc43ctsM+o46urrmPOiuAe+07fzlSB9OJVdpgDL0jPqXUVQ9ht7aq7kxOeJHRK+w==}
 
   brace-expansion@2.0.1:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
@@ -1257,6 +1280,9 @@ packages:
   lodash.castarray@4.4.0:
     resolution: {integrity: sha512-aVx8ztPv7/2ULbArGJ2Y42bG1mEQ5mGjpdvrbJcJFU3TbYybe+QlLS4pst9zV52ymy2in1KpFPiZnAOATxD4+Q==}
 
+  lodash.debounce@4.0.8:
+    resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
+
   lodash.isplainobject@4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
 
@@ -1618,6 +1644,10 @@ packages:
     resolution: {integrity: sha512-IRZSRuzJiynemAXPYtPe5BoI/RESNYR7TYm50MC5Mqbd3Jmw5y790sErYw3V6SryFJD64b74qQQs9wn5Bg/k3g==}
     engines: {node: '>= 0.4'}
 
+  on-change@4.0.2:
+    resolution: {integrity: sha512-cMtCyuJmTx/bg2HCpHo3ZLeF7FZnBOapLqZHr2AlLeJ5Ul0Zu2mUJJz051Fdwu/Et2YW04ZD+TtU+gVy0ACNCA==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+
   p-throttle@4.1.1:
     resolution: {integrity: sha512-TuU8Ato+pRTPJoDzYD4s7ocJYcNSEZRvlxoq3hcPI2kZDZ49IQ1Wkj7/gDJc3X7XiEAAvRGtDzdXJI0tC3IL1g==}
     engines: {node: '>=10'}
@@ -1760,6 +1790,9 @@ packages:
     peerDependencies:
       react: '*'
 
+  react-merge-refs@2.1.1:
+    resolution: {integrity: sha512-jLQXJ/URln51zskhgppGJ2ub7b2WFKGq3cl3NYKtlHoTG+dN2q7EzWrn3hN3EgPsTMvpR9tpq5ijdp7YwFZkag==}
+
   react-wrap-balancer@1.1.1:
     resolution: {integrity: sha512-AB+l7FPRWl6uZ28VcJ8skkwLn2+UC62bjiw8tQUrZPlEWDVnR9MG0lghyn7EyxuJSsFEpht4G+yh2WikEqQ/5Q==}
     peerDependencies:
@@ -1839,6 +1872,9 @@ packages:
   section-matter@1.0.0:
     resolution: {integrity: sha512-vfD3pmTzGpufjScBh50YHKzEu2lxBWhVEHsNGoEXmCmn2hKGfeNLYMzCJpe8cD7gqX7TJluOVpBkAequ6dgMmA==}
     engines: {node: '>=4'}
+
+  semver-compare@1.0.0:
+    resolution: {integrity: sha512-YM3/ITh2MJ5MtzaM429anh+x2jiLVjqILF4m4oyQB18W7Ggea7BfqdH/wGMK7dDiMghv/6WG7znWMwUDzJiXow==}
 
   serialize-javascript@6.0.2:
     resolution: {integrity: sha512-Saa1xPByTTq2gdeFZYLLo+RFE35NHZkAbqZeWNd3BpzppeVisAqpDjcp8dyf6uIvEqJRd46jemmyA4iFIeVk8g==}
@@ -1998,6 +2034,9 @@ packages:
 
   thenify@3.3.1:
     resolution: {integrity: sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw==}
+
+  thumbhash@0.1.1:
+    resolution: {integrity: sha512-kH5pKeIIBPQXAOni2AiY/Cu/NKdkFREdpH+TLdM0g6WA7RriCv0kPLgP731ady67MhTAqrVG/4mnEeibVuCJcg==}
 
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
@@ -2366,6 +2405,23 @@ snapshots:
 
   '@rometools/cli-win32-x64@12.1.3':
     optional: true
+
+  '@splinetool/react-spline@4.0.0(@splinetool/runtime@1.9.31)(next@14.2.4(@opentelemetry/api@1.4.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@splinetool/runtime': 1.9.31
+      blurhash: 2.0.5
+      lodash.debounce: 4.0.8
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-merge-refs: 2.1.1
+      thumbhash: 0.1.1
+    optionalDependencies:
+      next: 14.2.4(@opentelemetry/api@1.4.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+
+  '@splinetool/runtime@1.9.31':
+    dependencies:
+      on-change: 4.0.2
+      semver-compare: 1.0.0
 
   '@supabase/auth-js@2.64.2':
     dependencies:
@@ -2837,6 +2893,8 @@ snapshots:
   balanced-match@1.0.2: {}
 
   binary-extensions@2.3.0: {}
+
+  blurhash@2.0.5: {}
 
   brace-expansion@2.0.1:
     dependencies:
@@ -3378,6 +3436,8 @@ snapshots:
   loader-runner@4.3.0: {}
 
   lodash.castarray@4.4.0: {}
+
+  lodash.debounce@4.0.8: {}
 
   lodash.isplainobject@4.0.6: {}
 
@@ -4077,6 +4137,8 @@ snapshots:
 
   object-inspect@1.13.2: {}
 
+  on-change@4.0.2: {}
+
   p-throttle@4.1.1: {}
 
   parse-entities@4.0.1:
@@ -4212,6 +4274,8 @@ snapshots:
     dependencies:
       react: 18.3.1
 
+  react-merge-refs@2.1.1: {}
+
   react-wrap-balancer@1.1.1(react@18.3.1):
     dependencies:
       react: 18.3.1
@@ -4338,6 +4402,8 @@ snapshots:
     dependencies:
       extend-shallow: 2.0.1
       kind-of: 6.0.3
+
+  semver-compare@1.0.0: {}
 
   serialize-javascript@6.0.2:
     dependencies:
@@ -4513,6 +4579,8 @@ snapshots:
   thenify@3.3.1:
     dependencies:
       any-promise: 1.3.0
+
+  thumbhash@0.1.1: {}
 
   to-regex-range@5.0.1:
     dependencies:

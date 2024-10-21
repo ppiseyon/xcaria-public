@@ -7,6 +7,7 @@ import { Card } from "./card";
 import SubmitForm from '@/src/components/submit-form';
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
+import style from './contact.module.css'
 import ContactForm from "@/src/components/contactCard/ContactForm";
 // import Particless from "@/src/components/Particle";
 
@@ -86,16 +87,20 @@ export default function Example() {
        whileInView="show"
        viewport={{ once: true }}
        variants={fadeInUpAnimation}
-       className="text-white mt-[100px]">
+       className="text-white mt-[120px]">
 
         {/* xcaria info  */}
 
-        <div className="text-center space-y-4">
-          <h1 className="text-5xl font-serif">Let’s work together</h1>
-          <h3 className="text-2xl">Schedule a one-on-one discovery call with our team of data experts.</h3>
-          <div className="flex px-40 justify-between">
-          <h4 className="text-lg " ><b>Email: </b>   info@iseyon.com</h4>
-          <h4 className="text-lg "><b>Phone: </b>   (651) 503-9126</h4>
+        <div className="text-center space-y-4 mt-[40px]">
+          <h1 className={style.head}>Let’s work together</h1>
+          <div>
+            <div className="w-full flex flex-col items-center justify-center">
+          <h3 className={style.para}>Schedule a one-on-one discovery call with our team of data experts.</h3>
+          <div className={style.contact}>
+          <h4 ><b>Email: </b>   info@iseyon.com</h4>
+          <h4 ><b>Phone: </b>   (651) 503-9126</h4>
+          </div>
+          </div>
           </div>
         </div>
 

@@ -8,7 +8,7 @@ const BlogOverview = () => {
   // const posts =await getAllPosts();
 
   return (
-    <div className=''>
+    <div className={blogstyle.head}>
         {/* <div className='flex flex-col items-center justify-center gap-4'>
            <Image src={Profilepic}
            width={110} 
@@ -21,8 +21,8 @@ const BlogOverview = () => {
         </p> */}
 
         {/* <h2 className={blogstyle.bloglogo}><span>EXPLORE</span><span> BLOGS</span></h2> */}
-        <h2 className={blogstyle.bloglogo}><span>E</span><span>X</span><span>P</span><span>L</span><span>O</span><span>R</span><span>E</span><span> </span><span>B</span><span>L</span><span>O</span><span>G</span><span>S</span></h2>
-       
+        <h2 className={blogstyle.bloglogo}><span className='text-white'>E</span><span className='text-white'>x</span><span className='text-white'>p</span><span className='text-white'>l</span><span className='text-white'>o</span><span className='text-white'>r</span><span className='text-white'>e</span><span> </span><span>B</span><span>l</span><span>o</span><span>g</span><span>s</span></h2>
+       <p className='text-center text-1xl'>“Discover insightful articles on a variety of topics, from technology to lifestyle.”</p>
     </div>
   )
 }

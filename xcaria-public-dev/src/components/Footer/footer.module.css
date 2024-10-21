@@ -104,3 +104,12 @@
 
 
 }
+.footLogo{
+    position: relative;
+    bottom: 12px;
+}
+.home{
+    position: relative;
+    left: 50px;
+
+}

@@ -3,6 +3,8 @@
 import Link from 'next/link'
 import classes from './footer.module.css'
 import {delay, motion} from 'framer-motion'
+import Image from 'next/image'
+import Xcaria from '@/public/xcariaLogo.png'
 export default function foot(){
   
 const fadeInUpAnimation = {
@@ -39,8 +41,13 @@ const fadeInUpAnimation = {
     whileInView={ {y: 0, opacity: 1} }
     viewport={{ once: true }}
     >
-    <div >
-      <Link href='/'  className={classes.link}><h1 className={classes.footerLogo}>xCaria</h1></Link>
+    <div>
+      <Link href='/'  className={classes.link}>
+				
+        <Image src={Xcaria} alt='xcaria logo...' height={80} width={110} className={classes.footLogo}/>
+       
+
+      </Link>
       <ul className='text-[0.8rem]'>
         {/* <li >
           New York l New Jersey | Minnesota l California l Florida l
@@ -55,7 +62,7 @@ const fadeInUpAnimation = {
     </div>
    
     <div   className={classes.footer1}>
-    <Link href='/' className={classes.link}><h1>Home</h1></Link>
+    <Link href='/' className={classes.link}><h1 className={classes.home}>Home</h1></Link>
      
       {/* <motion.ul    initial='hidden'
         animate='show'

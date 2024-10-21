@@ -151,7 +151,7 @@ export default function RemoteMdxPage() {
     },
     {
       img: img5,
-      title: "Local Cahtbot",
+      title: "Local Chatbot",
       subTitle:
         "A data governance chatbot is an AI-powered tool designed to help organizations manage and enforce data governance policies in real-time. It assists users in understanding, accessing, and complying with data governance frameworks, ensuring data integrity, security, and compliance across the organization.",
       descp:
